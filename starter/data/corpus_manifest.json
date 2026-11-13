@@ -1,0 +1,369 @@
+{
+  "corpus": "Sherlock Holmes public-domain stories and novels",
+  "source_repository": "Local source: sherlock-master/; upstream URL is not recorded in the provided README; text files are stated to originate from Project Gutenberg.",
+  "license_or_permission": "Source README states story and novel texts originate from Project Gutenberg and may be reused under the applicable Project Gutenberg License; verify local jurisdiction. Processing scripts in the source repository have separate copyright.",
+  "accessed_at": "2026-11-13",
+  "unit_definition": "One source text file is one non-paginated unit; normalized with Unicode NFC and whitespace collapsed.",
+  "unit_requirement_characters": 1500,
+  "unit_count": 51,
+  "qualifying_unit_count": 51,
+  "units": [
+    {
+      "source_id": "001_Study_in_Scarlet",
+      "title": "Study in Scarlet",
+      "source_path": "sherlock-master/novels/001_Study_in_Scarlet.txt",
+      "unit_id": "001_Study_in_Scarlet",
+      "characters_normalized": 237712
+    },
+    {
+      "source_id": "002_Sign_of_Four",
+      "title": "Sign of Four",
+      "source_path": "sherlock-master/novels/002_Sign_of_Four.txt",
+      "unit_id": "002_Sign_of_Four",
+      "characters_normalized": 230716
+    },
+    {
+      "source_id": "028_Hound_of_theBaskervilles",
+      "title": "Hound of theBaskervilles",
+      "source_path": "sherlock-master/novels/028_Hound_of_theBaskervilles.txt",
+      "unit_id": "028_Hound_of_theBaskervilles",
+      "characters_normalized": 316152
+    },
+    {
+      "source_id": "048_Valley_of_Fear",
+      "title": "Valley of Fear",
+      "source_path": "sherlock-master/novels/048_Valley_of_Fear.txt",
+      "unit_id": "048_Valley_of_Fear",
+      "characters_normalized": 310404
+    },
+    {
+      "source_id": "003_ASH_01_Scandal_In_Bohemia",
+      "title": "ASH 01 Scandal In Bohemia",
+      "source_path": "sherlock-master/stories/003_ASH_01_Scandal_In_Bohemia.txt",
+      "unit_id": "003_ASH_01_Scandal_In_Bohemia",
+      "characters_normalized": 46140
+    },
+    {
+      "source_id": "004_ASH_02_Red_Headed_League",
+      "title": "ASH 02 Red Headed League",
+      "source_path": "sherlock-master/stories/004_ASH_02_Red_Headed_League.txt",
+      "unit_id": "004_ASH_02_Red_Headed_League",
+      "characters_normalized": 49057
+    },
+    {
+      "source_id": "005_ASH_03_Case_Of_Identity",
+      "title": "ASH 03 Case Of Identity",
+      "source_path": "sherlock-master/stories/005_ASH_03_Case_Of_Identity.txt",
+      "unit_id": "005_ASH_03_Case_Of_Identity",
+      "characters_normalized": 37784
+    },
+    {
+      "source_id": "006_ASH_04_Boscombe_Valley_Mystery",
+      "title": "ASH 04 Boscombe Valley Mystery",
+      "source_path": "sherlock-master/stories/006_ASH_04_Boscombe_Valley_Mystery.txt",
+      "unit_id": "006_ASH_04_Boscombe_Valley_Mystery",
+      "characters_normalized": 51137
+    },
+    {
+      "source_id": "007_ASH_05_Five_Orange_Pips",
+      "title": "ASH 05 Five Orange Pips",
+      "source_path": "sherlock-master/stories/007_ASH_05_Five_Orange_Pips.txt",
+      "unit_id": "007_ASH_05_Five_Orange_Pips",
+      "characters_normalized": 39288
+    },
+    {
+      "source_id": "008_ASH_06_Man_With_Twisted_Lip",
+      "title": "ASH 06 Man With Twisted Lip",
+      "source_path": "sherlock-master/stories/008_ASH_06_Man_With_Twisted_Lip.txt",
+      "unit_id": "008_ASH_06_Man_With_Twisted_Lip",
+      "characters_normalized": 48981
+    },
+    {
+      "source_id": "009_ASH_07_Blue_Carbuncle",
+      "title": "ASH 07 Blue Carbuncle",
+      "source_path": "sherlock-master/stories/009_ASH_07_Blue_Carbuncle.txt",
+      "unit_id": "009_ASH_07_Blue_Carbuncle",
+      "characters_normalized": 41886
+    },
+    {
+      "source_id": "010_ASH_08_Speckled_Band",
+      "title": "ASH 08 Speckled Band",
+      "source_path": "sherlock-master/stories/010_ASH_08_Speckled_Band.txt",
+      "unit_id": "010_ASH_08_Speckled_Band",
+      "characters_normalized": 52724
+    },
+    {
+      "source_id": "011_ASH_09_Engineers_Thumb",
+      "title": "ASH 09 Engineers Thumb",
+      "source_path": "sherlock-master/stories/011_ASH_09_Engineers_Thumb.txt",
+      "unit_id": "011_ASH_09_Engineers_Thumb",
+      "characters_normalized": 44422
+    },
+    {
+      "source_id": "012_ASH_10_Noble_Bachelor",
+      "title": "ASH 10 Noble Bachelor",
+      "source_path": "sherlock-master/stories/012_ASH_10_Noble_Bachelor.txt",
+      "unit_id": "012_ASH_10_Noble_Bachelor",
+      "characters_normalized": 43853
+    },
+    {
+      "source_id": "013_ASH_11_Beryl_Coronet",
+      "title": "ASH 11 Beryl Coronet",
+      "source_path": "sherlock-master/stories/013_ASH_11_Beryl_Coronet.txt",
+      "unit_id": "013_ASH_11_Beryl_Coronet",
+      "characters_normalized": 50787
+    },
+    {
+      "source_id": "014_ASH_12_Copper_Beeches",
+      "title": "ASH 12 Copper Beeches",
+      "source_path": "sherlock-master/stories/014_ASH_12_Copper_Beeches.txt",
+      "unit_id": "014_ASH_12_Copper_Beeches",
+      "characters_normalized": 52846
+    },
+    {
+      "source_id": "015_MSH_01_Silver_Blaze",
+      "title": "MSH 01 Silver Blaze",
+      "source_path": "sherlock-master/stories/015_MSH_01_Silver_Blaze.txt",
+      "unit_id": "015_MSH_01_Silver_Blaze",
+      "characters_normalized": 52282
+    },
+    {
+      "source_id": "016_MSH_02_Cardboard_Box",
+      "title": "MSH 02 Cardboard Box",
+      "source_path": "sherlock-master/stories/016_MSH_02_Cardboard_Box.txt",
+      "unit_id": "016_MSH_02_Cardboard_Box",
+      "characters_normalized": 45748
+    },
+    {
+      "source_id": "017_MSH_03_Yellow_Face",
+      "title": "MSH 03 Yellow Face",
+      "source_path": "sherlock-master/stories/017_MSH_03_Yellow_Face.txt",
+      "unit_id": "017_MSH_03_Yellow_Face",
+      "characters_normalized": 38954
+    },
+    {
+      "source_id": "018_MSH_04_Stockbrokers_Clerk",
+      "title": "MSH 04 Stockbrokers Clerk",
+      "source_path": "sherlock-master/stories/018_MSH_04_Stockbrokers_Clerk.txt",
+      "unit_id": "018_MSH_04_Stockbrokers_Clerk",
+      "characters_normalized": 36324
+    },
+    {
+      "source_id": "019_MSH_05_Gloria_Scott",
+      "title": "MSH 05 Gloria Scott",
+      "source_path": "sherlock-master/stories/019_MSH_05_Gloria_Scott.txt",
+      "unit_id": "019_MSH_05_Gloria_Scott",
+      "characters_normalized": 41328
+    },
+    {
+      "source_id": "020_MSH_06_Musgrave_Ritual",
+      "title": "MSH 06 Musgrave Ritual",
+      "source_path": "sherlock-master/stories/020_MSH_06_Musgrave_Ritual.txt",
+      "unit_id": "020_MSH_06_Musgrave_Ritual",
+      "characters_normalized": 40531
+    },
+    {
+      "source_id": "021_MSH_07_Reigate_Squire",
+      "title": "MSH 07 Reigate Squire",
+      "source_path": "sherlock-master/stories/021_MSH_07_Reigate_Squire.txt",
+      "unit_id": "021_MSH_07_Reigate_Squire",
+      "characters_normalized": 39249
+    },
+    {
+      "source_id": "022_MSH_08_Crooked_Man",
+      "title": "MSH 08 Crooked Man",
+      "source_path": "sherlock-master/stories/022_MSH_08_Crooked_Man.txt",
+      "unit_id": "022_MSH_08_Crooked_Man",
+      "characters_normalized": 37971
+    },
+    {
+      "source_id": "023_MSH_09_Resident_Patient",
+      "title": "MSH 09 Resident Patient",
+      "source_path": "sherlock-master/stories/023_MSH_09_Resident_Patient.txt",
+      "unit_id": "023_MSH_09_Resident_Patient",
+      "characters_normalized": 40008
+    },
+    {
+      "source_id": "024_MSH_10_Greek_Interpreter",
+      "title": "MSH 10 Greek Interpreter",
+      "source_path": "sherlock-master/stories/024_MSH_10_Greek_Interpreter.txt",
+      "unit_id": "024_MSH_10_Greek_Interpreter",
+      "characters_normalized": 38196
+    },
+    {
+      "source_id": "025_MSH_11_Naval_Treaty",
+      "title": "MSH 11 Naval Treaty",
+      "source_path": "sherlock-master/stories/025_MSH_11_Naval_Treaty.txt",
+      "unit_id": "025_MSH_11_Naval_Treaty",
+      "characters_normalized": 67707
+    },
+    {
+      "source_id": "026_MSH_12_Final_Problem",
+      "title": "MSH 12 Final Problem",
+      "source_path": "sherlock-master/stories/026_MSH_12_Final_Problem.txt",
+      "unit_id": "026_MSH_12_Final_Problem",
+      "characters_normalized": 38402
+    },
+    {
+      "source_id": "029_RSH_01_Empty_House",
+      "title": "RSH 01 Empty House",
+      "source_path": "sherlock-master/stories/029_RSH_01_Empty_House.txt",
+      "unit_id": "029_RSH_01_Empty_House",
+      "characters_normalized": 47291
+    },
+    {
+      "source_id": "030_RSH_02_Norwood_Builder",
+      "title": "RSH 02 Norwood Builder",
+      "source_path": "sherlock-master/stories/030_RSH_02_Norwood_Builder.txt",
+      "unit_id": "030_RSH_02_Norwood_Builder",
+      "characters_normalized": 50194
+    },
+    {
+      "source_id": "031_RSH_03_Dancing_Men",
+      "title": "RSH 03 Dancing Men",
+      "source_path": "sherlock-master/stories/031_RSH_03_Dancing_Men.txt",
+      "unit_id": "031_RSH_03_Dancing_Men",
+      "characters_normalized": 51433
+    },
+    {
+      "source_id": "032_RSH_04_Solitary_Cyclist",
+      "title": "RSH 04 Solitary Cyclist",
+      "source_path": "sherlock-master/stories/032_RSH_04_Solitary_Cyclist.txt",
+      "unit_id": "032_RSH_04_Solitary_Cyclist",
+      "characters_normalized": 42196
+    },
+    {
+      "source_id": "033_RSH_05_Priory_School",
+      "title": "RSH 05 Priory School",
+      "source_path": "sherlock-master/stories/033_RSH_05_Priory_School.txt",
+      "unit_id": "033_RSH_05_Priory_School",
+      "characters_normalized": 61923
+    },
+    {
+      "source_id": "034_RSH_06_Black_Peter",
+      "title": "RSH 06 Black Peter",
+      "source_path": "sherlock-master/stories/034_RSH_06_Black_Peter.txt",
+      "unit_id": "034_RSH_06_Black_Peter",
+      "characters_normalized": 43566
+    },
+    {
+      "source_id": "035_RSH_07_Charles_Augustus_Milverton",
+      "title": "RSH 07 Charles Augustus Milverton",
+      "source_path": "sherlock-master/stories/035_RSH_07_Charles_Augustus_Milverton.txt",
+      "unit_id": "035_RSH_07_Charles_Augustus_Milverton",
+      "characters_normalized": 36421
+    },
+    {
+      "source_id": "036_RSH_08_Six_Napoleons",
+      "title": "RSH 08 Six Napoleons",
+      "source_path": "sherlock-master/stories/036_RSH_08_Six_Napoleons.txt",
+      "unit_id": "036_RSH_08_Six_Napoleons",
+      "characters_normalized": 44849
+    },
+    {
+      "source_id": "037_RSH_09_Three_Students",
+      "title": "RSH 09 Three Students",
+      "source_path": "sherlock-master/stories/037_RSH_09_Three_Students.txt",
+      "unit_id": "037_RSH_09_Three_Students",
+      "characters_normalized": 34871
+    },
+    {
+      "source_id": "038_RSH_10_Golden_PinceNez",
+      "title": "RSH 10 Golden PinceNez",
+      "source_path": "sherlock-master/stories/038_RSH_10_Golden_PinceNez.txt",
+      "unit_id": "038_RSH_10_Golden_PinceNez",
+      "characters_normalized": 48085
+    },
+    {
+      "source_id": "039_RSH_11_Missing_Three_Quarter",
+      "title": "RSH 11 Missing Three Quarter",
+      "source_path": "sherlock-master/stories/039_RSH_11_Missing_Three_Quarter.txt",
+      "unit_id": "039_RSH_11_Missing_Three_Quarter",
+      "characters_normalized": 43567
+    },
+    {
+      "source_id": "040_RSH_12_Abbey_Grange",
+      "title": "RSH 12 Abbey Grange",
+      "source_path": "sherlock-master/stories/040_RSH_12_Abbey_Grange.txt",
+      "unit_id": "040_RSH_12_Abbey_Grange",
+      "characters_normalized": 48536
+    },
+    {
+      "source_id": "041_RSH_13_Second_Stain",
+      "title": "RSH 13 Second Stain",
+      "source_path": "sherlock-master/stories/041_RSH_13_Second_Stain.txt",
+      "unit_id": "041_RSH_13_Second_Stain",
+      "characters_normalized": 52875
+    },
+    {
+      "source_id": "042_HLB_1_Wisteria_Lodge_MULTIPART",
+      "title": "HLB 1 Wisteria Lodge MULTIPART",
+      "source_path": "sherlock-master/stories/042_HLB_1_Wisteria_Lodge_MULTIPART.txt",
+      "unit_id": "042_HLB_1_Wisteria_Lodge_MULTIPART",
+      "characters_normalized": 61886
+    },
+    {
+      "source_id": "043_HLB_2_Bruce_Partington_Plans",
+      "title": "HLB 2 Bruce Partington Plans",
+      "source_path": "sherlock-master/stories/043_HLB_2_Bruce_Partington_Plans.txt",
+      "unit_id": "043_HLB_2_Bruce_Partington_Plans",
+      "characters_normalized": 58852
+    },
+    {
+      "source_id": "044_HLB_3_Devil's_Foot",
+      "title": "HLB 3 Devil's Foot",
+      "source_path": "sherlock-master/stories/044_HLB_3_Devil's_Foot.txt",
+      "unit_id": "044_HLB_3_Devil's_Foot",
+      "characters_normalized": 55036
+    },
+    {
+      "source_id": "045_HLB_4_Red_Circle",
+      "title": "HLB 4 Red Circle",
+      "source_path": "sherlock-master/stories/045_HLB_4_Red_Circle.txt",
+      "unit_id": "045_HLB_4_Red_Circle",
+      "characters_normalized": 39498
+    },
+    {
+      "source_id": "046_HLB_5_Disappearance_Lady_Frances_Carfax",
+      "title": "HLB 5 Disappearance Lady Frances Carfax",
+      "source_path": "sherlock-master/stories/046_HLB_5_Disappearance_Lady_Frances_Carfax.txt",
+      "unit_id": "046_HLB_5_Disappearance_Lady_Frances_Carfax",
+      "characters_normalized": 41963
+    },
+    {
+      "source_id": "047_HLB_6_Dying_Detective",
+      "title": "HLB 6 Dying Detective",
+      "source_path": "sherlock-master/stories/047_HLB_6_Dying_Detective.txt",
+      "unit_id": "047_HLB_6_Dying_Detective",
+      "characters_normalized": 31160
+    },
+    {
+      "source_id": "049_HLB_7_His_Last_Bow",
+      "title": "HLB 7 His Last Bow",
+      "source_path": "sherlock-master/stories/049_HLB_7_His_Last_Bow.txt",
+      "unit_id": "049_HLB_7_His_Last_Bow",
+      "characters_normalized": 32769
+    },
+    {
+      "source_id": "050_CBSH_1_Mazarin_Stone",
+      "title": "CBSH 1 Mazarin Stone",
+      "source_path": "sherlock-master/stories/050_CBSH_1_Mazarin_Stone.txt",
+      "unit_id": "050_CBSH_1_Mazarin_Stone",
+      "characters_normalized": 30759
+    },
+    {
+      "source_id": "051_CBSH_2_Thor_Bridge",
+      "title": "CBSH 2 Thor Bridge",
+      "source_path": "sherlock-master/stories/051_CBSH_2_Thor_Bridge.txt",
+      "unit_id": "051_CBSH_2_Thor_Bridge",
+      "characters_normalized": 51402
+    },
+    {
+      "source_id": "052_CBSH_3_Creeping_Man",
+      "title": "CBSH 3 Creeping Man",
+      "source_path": "sherlock-master/stories/052_CBSH_3_Creeping_Man.txt",
+      "unit_id": "052_CBSH_3_Creeping_Man",
+      "characters_normalized": 42142
+    }
+  ]
+}

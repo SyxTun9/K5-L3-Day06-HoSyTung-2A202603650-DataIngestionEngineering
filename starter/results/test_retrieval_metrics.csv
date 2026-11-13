@@ -1,0 +1,4 @@
+﻿strategy,split,question_count,hit_at_1_count,hit_at_1_rate,evidence_hit_at_3_count,evidence_hit_at_3_rate,filter_question_count,filter_compliant_count,filter_compliance_rate
+A,test,5,1,0.2,1,0.2,,,
+B,test,5,0,0.0,0,0.0,,,
+C,test,5,0,0.0,0,0.0,1,1,1.0

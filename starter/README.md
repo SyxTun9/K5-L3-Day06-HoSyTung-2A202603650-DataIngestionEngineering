@@ -1,65 +1,77 @@
-# Starter · PostgreSQL + pgvector
+# Starter · Sherlock Holmes + Chroma
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+Đây là pipeline đã hiện thực cho corpus Sherlock Holmes trong `../sherlock-master/`. Pipeline dùng Chroma persistent local và embedding local; không cần Docker hay API key. Các file PostgreSQL/pgvector còn trong starter là phương án hạ tầng khác, không được `src.run` sử dụng.
 
-## Cấu trúc
+## Yêu cầu
 
-```text
-starter/
-├── docker-compose.yml     # PostgreSQL 16 + pgvector, chỉ mở cổng local
-├── init.sql               # bật extension khi tạo database mới
-├── requirements.txt       # psycopg, pypdf và python-dotenv
-├── .env.example           # cấu hình mẫu; copy thành .env
-├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
-├── src/
-│   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
-├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
-└── results/               # lưu kết quả của bạn
-```
+- Python 3.11–3.14 (đã chạy với Python 3.13.15)
+- Mạng ở lần đầu để cài package và tải model `all-MiniLM-L6-v2`
+- Đủ dung lượng đĩa cho model và database Chroma
 
-## 1. Cài và kiểm tra database
+## Cài đặt trên Windows PowerShell
 
-Cần Docker Desktop hoặc Docker Engine + Compose, Python **3.11–3.14**, và mạng để tải image/dependencies lần đầu. Các lệnh sau chạy từ thư mục `starter/`:
+Chạy từ thư mục `starter/`:
 
-```bash
-cd starter
-python3 -m venv .venv
-```
-
-Kích hoạt `.venv`: macOS/Linux dùng `source .venv/bin/activate`; Windows PowerShell dùng `.venv\Scripts\Activate.ps1`. Sau đó:
-
-```bash
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-# macOS/Linux: cp .env.example .env
-# Windows PowerShell: Copy-Item .env.example .env
-docker compose -p day6_student_starter up -d --wait
-python scripts/check_setup.py
 ```
 
-Kỳ vọng: hiện tên database, phiên bản PostgreSQL và pgvector, sau đó `Setup OK`. Đây **chỉ là kiểm tra hạ tầng**, không phải kết quả benchmark. Docker dùng cổng `127.0.0.1:55433` và mật khẩu cố định **chỉ dùng local cho lab**; nếu cổng bận, sửa đồng thời port trong `docker-compose.yml` và `DATABASE_URL` trong `.env`. `init.sql` chỉ chạy khi volume mới được tạo; nếu database sẵn có chưa bật extension, xem log Docker và kiểm tra cấu hình thay vì xóa volume chứa dữ liệu.
+Chroma `1.5.9` và các dependency được khóa trong `requirements.txt`. Chroma dùng `all-MiniLM-L6-v2` mặc định, chạy local, 384 chiều. Lần đầu có thể mất thời gian tải model.
 
-Dừng container nhưng giữ dữ liệu:
+## Corpus và manifest
 
-```bash
-docker compose -p day6_student_starter stop
+Văn bản gốc nằm trong `../sherlock-master/stories/` và `../sherlock-master/novels/`; manifest là `data/corpus_manifest.json`. Mỗi tệp là một đơn vị văn bản không phân trang. Manifest ghi source ID, đường dẫn, số ký tự sau chuẩn hóa và thông tin nguồn/quyền. Không cần sao chép corpus vào `starter/data/`.
+
+## Chạy pipeline
+
+Từ `starter/`, với `.venv` đang bật:
+
+```powershell
+python -m src.run
 ```
 
-## 2. Chọn embedding model
+Lệnh này đọc manifest và nạp ba collection vào `chroma_db/`:
 
-Điền key tương ứng trong `.env` nếu dùng OpenRouter, OpenAI hoặc Gemini; **không commit `.env`**. Model local không cần API key. `requirements.txt` chỉ có dependencies cơ bản: tự cài SDK hoặc thư viện local phù hợp với model bạn chọn và ghi lại version/lệnh cài trong báo cáo. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược và vector query tương thích vector document.
+- **A:** chunk cố định 1.000 ký tự, overlap 150.
+- **B:** gom theo đoạn, tối đa 1.000 ký tự; đoạn dài được chia nhỏ.
+- **C:** cùng chunk với B; khi câu benchmark có filter, tìm kiếm C áp dụng `document_type` (`story` hoặc `novel`).
 
-## 3. Hoàn thiện pipeline
+Chạy lại sẽ upsert theo ID ổn định và loại chunk cũ của các tài liệu được nạp lại. `chroma_db/` nằm trong `.gitignore`.
+Thời gian tổng mỗi lần ingest được in ra console và append vào `results/ingest_runs.csv`.
 
-1. Đặt corpus vào `data/` hoặc cung cấp manifest/hướng dẫn truy cập. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
-2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
-3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
-4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
+## Benchmark
 
-Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.
+Benchmark đã kiểm tra nằm tại `data/benchmark_questions.csv` (20 câu: 15 dev / 5 test). Trace đầy đủ và metric được ghi dưới `results/`.
+
+Chạy dev trước:
+
+```powershell
+python -m src.evaluate --split dev
+```
+
+Xem `results/dev_retrieval_metrics.csv` và khóa tiêu chí/cấu hình trước khi xem test. Chỉ sau đó chạy test một lần:
+
+```powershell
+python -m src.evaluate --split test
+```
+
+Các file kết quả chính:
+
+- `results/dev_traces.jsonl`, `results/test_traces.jsonl`: top-3 gồm text, score, metadata và nhãn match tự động theo gold source/evidence.
+- `results/dev_retrieval_metrics.csv`, `results/test_retrieval_metrics.csv`: Hit@1, Evidence Hit@3 và filter compliance của C.
+- `results/test_grounding_review.csv`, `results/test_metadata_review.csv`: audit thủ công test.
+- `results/chunk_coherence_review.csv`: mẫu 10 vị trí nguồn chung cho A/B/C.
+
+Metric match evidence tự động không thay thế nhãn grounding/chunk coherence thủ công. Ghi nhận lỗi, giả thuyết, thời gian, chi phí và giới hạn trong báo cáo; không tinh chỉnh theo test rồi coi test là holdout độc lập.
+
+## Tạo lại bảng coherence
+
+Sau khi ingest, có thể tạo lại mẫu 10 vị trí cố định bằng:
+
+```powershell
+python scripts/prepare_coherence_review.py
+```
+
+Lệnh này tạo lại `results/chunk_coherence_review.csv`; hãy lưu nhãn thủ công trước khi chạy lại.

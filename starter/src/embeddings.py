@@ -1,5 +1,7 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
+"""Local embedding adapter using Chroma's default real embedding model."""
 from typing import Protocol
+
+from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 
 
 class Embedder(Protocol):
@@ -16,14 +18,20 @@ class Embedder(Protocol):
 
 
 class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+    """Wrap Chroma's local all-MiniLM-L6-v2 embedding function."""
 
     def __init__(self, model_name: str) -> None:
-        self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+        if model_name not in {"all-MiniLM-L6-v2", "default"}:
+            raise ValueError(
+                "This adapter uses Chroma's all-MiniLM-L6-v2 model; "
+                "choose model_name='all-MiniLM-L6-v2'."
+            )
+        self.model_name = "all-MiniLM-L6-v2 (Chroma DefaultEmbeddingFunction)"
+        self._function = DefaultEmbeddingFunction()
+        self.dimensions = len(self._function(["dimension check"])[0])
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+        return [vector.tolist() for vector in self._function(texts)]
 
     def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+        return self._function([question])[0].tolist()

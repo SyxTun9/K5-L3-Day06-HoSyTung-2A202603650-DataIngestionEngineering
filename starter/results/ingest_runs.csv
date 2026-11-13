@@ -1,0 +1,2 @@
+﻿run_started_at_utc,source_units,model,dimensions,collection_a_chunks,collection_b_chunks,collection_c_chunks,elapsed_seconds
+2026-11-13T12:25:28.735721+00:00,51,all-MiniLM-L6-v2 (Chroma DefaultEmbeddingFunction),384,3823,4202,4202,412.21

@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,1000,150,document_id;source;page;unit_id;title;document_type;char_start;char_end,none,all-MiniLM-L6-v2 384d,Not recorded before run; no preregistered hypothesis,2/15,6/15,1/5,1/5,3823 chunks; coherence 0.0/2; test grounding 3/1/1; cost 0 local
+B,paragraph,1000,0,document_id;source;page;unit_id;title;document_type;char_start;char_end,none,all-MiniLM-L6-v2 384d,Not recorded before run; no preregistered hypothesis,2/15,5/15,0/5,0/5,4202 chunks; coherence 1.6/2; test grounding 5/0/0; cost 0 local
+C,paragraph,1000,0,document_id;source;page;unit_id;title;document_type;char_start;char_end,document_type when supplied,all-MiniLM-L6-v2 384d,Not recorded before run; no preregistered hypothesis,2/15,5/15,0/5,0/5,4202 chunks; coherence 1.6/2; C filter compliance 3/3 dev and 3/3 test hits; cost 0 local

@@ -1,0 +1,56 @@
+# Báo cáo cá nhân — Day 6
+
+## Dữ liệu và pipeline
+
+- Họ tên / MSSV: Hồ Sỹ Tùng / 2A202603650
+- Chủ đề: truyện và tiểu thuyết Sherlock Holmes.
+- Corpus: 51 đơn vị văn bản không phân trang gồm 47 truyện và 4 tiểu thuyết; manifest ghi từng tệp và số ký tự sau chuẩn hóa. Cả 51 đơn vị đều vượt ngưỡng 1.500 ký tự.
+- Nguồn và quyền: các tệp văn bản trong `sherlock-master/` được README của bộ dữ liệu ghi là lấy từ Project Gutenberg và được tái sử dụng theo điều khoản Project Gutenberg áp dụng. Người học xác nhận đã kiểm tra quyền sử dụng. Mã xử lý trong repository nguồn có bản quyền riêng và không được dùng làm corpus.
+- Chuẩn hóa: Unicode NFC; chuẩn hóa xuống dòng và khoảng trắng, giữ ranh giới đoạn. Văn bản được truy vết bằng `document_id`, `source`, `unit_id`, `char_start` và `char_end`. `page=1` chỉ là giá trị tương thích vì nguồn là văn bản không phân trang.
+- Lỗi xử lý đã ghi nhận:
+- Embedding: Chroma `DefaultEmbeddingFunction`, model `all-MiniLM-L6-v2`, chạy local, 384 chiều; package `chromadb==1.5.9`. Revision cụ thể của model chưa được pin.
+- Vector store: Chroma persistent local, cosine similarity; dữ liệu lưu tại `starter/chroma_db/`. Chi phí embedding/vector store: 0 theo cấu hình local đã chạy.
+- Metadata: `document_id`, `source`, `page`, `unit_id`, `title`, `document_type`, `char_start`, `char_end`. Trường filter là `document_type` (`story` / `novel`), suy ra từ thư mục nguồn; filter giúp giới hạn loại tác phẩm khi câu hỏi yêu cầu.
+- Lệnh chạy: `python -m src.run`; benchmark: `python -m src.evaluate --split dev` và `python -m src.evaluate --split test`.
+- Thời gian ingest / benchmark và cấu hình máy: 6,9 phút.
+
+## Cấu hình và benchmark
+
+- A: cửa sổ cố định 1.000 ký tự, overlap 150.
+- B: chia theo đoạn, giới hạn chunk 1.000 ký tự; đoạn quá dài được chia theo cửa sổ.
+- C: cùng chunk với B; áp dụng filter metadata khi câu hỏi cung cấp filter.
+- Chunk count sau lần ingest được đánh giá: A = 3.823; B = 4.202; C = 4.202.
+- Benchmark: 20 câu, 15 dev / 5 test; 4 câu filter (3 dev / 1 test). Evidence được đối chiếu trực tiếp với văn bản chuẩn hóa; offset là khoảng ký tự `[start:end]` với `end` không bao gồm.
+- Tiêu chí chọn đã ghi trước khi xem kết quả test: ưu tiên Evidence Hit@3 trên dev, sau đó Hit@1; filter compliance được báo riêng. Theo tiêu chí này, A được chọn làm cấu hình chính trước test vì đạt Evidence Hit@3 6/15, so với 5/15 ở B và C.
+
+## Kết quả retrieval
+
+| Strategy | Split | Hit@1 | Evidence Hit@3 | Chunk count | Thời gian | Chi phí |
+|---|---|---:|---:|---:|---|---:|
+| A | dev | 2/15 | 6/15 | 3.823 | Chưa ghi | 0 |
+| B | dev | 2/15 | 5/15 | 4.202 | Chưa ghi | 0 |
+| C | dev | 2/15 | 5/15 | 4.202 | Chưa ghi | 0 |
+| A | test | 1/5 | 1/5 | 3.823 | Chưa ghi | 0 |
+| B | test | 0/5 | 0/5 | 4.202 | Chưa ghi | 0 |
+| C | test | 0/5 | 0/5 | 4.202 | Chưa ghi | 0 |
+
+## Kết quả đánh giá thủ công
+
+| Strategy | Coherence trung bình /2 (n=10) | Metadata đúng (n=15 top-3) | Filter tuân thủ | Grounding test 0/1/2 (n=5), trung bình /2 |
+|---|---:|---:|---:|---:|
+| A | 0,0 | 15/15 | N/A | 3 / 1 / 1; 0,6 |
+| B | 1,6 | 15/15 | N/A | 5 / 0 / 0; 0,0 |
+| C | 1,6 | 15/15 | 3/3 chunk, 1/1 câu | 5 / 0 / 0; 0,0 |
+
+- Grounding và metadata được người học chấm trong `starter/results/test_grounding_review.csv` và `starter/results/test_metadata_review.csv`.
+- Chunk coherence được chấm trên cùng 10 đơn vị nguồn đầu tiên theo ID, lấy vị trí giữa văn bản chuẩn hóa; bảng nhãn: `starter/results/chunk_coherence_review.csv`.
+- Trace retrieval: `starter/results/dev_traces.jsonl`, `starter/results/test_traces.jsonl`.
+- Bản ghi tiêu chí chọn và diễn giải: `starter/results/dev_selection_record.md`.
+
+## Phân tích và kết luận
+
+- A tốt hơn trên retrieval test trong mẫu này (1/5 Evidence Hit@3 so với 0/5); B và C có coherence tốt hơn A (1,6/2 so với 0/2). C tuân thủ filter ở cả 3 kết quả top-3 của câu filter test, nhưng không tìm được evidence từ đúng tác phẩm.
+- Ví dụ lỗi: Q18, C giới hạn kết quả vào `document_type=story` nhưng top-3 không chứa nguồn gold `051_CBSH_2_Thor_Bridge`; Q20, không cấu hình nào tìm được evidence về vệt trắng trên trán của Silver Blaze trong top-3.
+- Theo tiêu chí retrieval đã chốt, chọn A làm cấu hình chính. Đánh đổi là coherence thấp hơn; B/C tạo đoạn dễ đọc hơn và C cung cấp filter chính xác theo loại tài liệu.
+- Hạn chế: chỉ 5 câu test; model và metric chỉ được đánh giá trên corpus Sherlock Holmes; retrieval thấp; đánh giá coherence và grounding do một người chấm nên có thể thiên lệch; thời gian chạy chưa được ghi; model revision chưa pin.
+- Nếu mở rộng: cải thiện cách chia đoạn dài theo ranh giới câu/ý, xem lại câu truy vấn thất bại trên dev cho một benchmark mới, tăng số câu test độc lập và ghi thời gian ingest/query. Không dùng lại test hiện tại để tinh chỉnh rồi báo là đánh giá độc lập.

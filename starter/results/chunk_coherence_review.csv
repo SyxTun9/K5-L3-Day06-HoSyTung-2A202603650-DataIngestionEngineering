@@ -1,0 +1,239 @@
+﻿"sample_id","source_id","title","sample_char_position","sampling_rule","strategy","chunk_id","chunk_char_start","chunk_char_end","chunk_text","coherence_score_0_1_2","reason","reviewer"
+"S01","001_Study_in_Scarlet","Study in Scarlet","119247","First 10 source IDs sorted; normalized text midpoint","A","001_Study_in_Scarlet:fixed:00140","119000","120000","of statues. Then with an inarticulate roar of fury, the prisoner wrenched himself free from Holmes's grasp, and hurled himself through the window. Woodwork and glass gave way before him; but before he got quite through, Gregson, Lestrade, and Holmes sprang upon him like so many staghounds. He was dragged back into the room, and then commenced a terrific conflict. So powerful and so fierce was he that the four of us were shaken off again and again. He appeared to have the convulsive strength of a man in an epileptic fit. His face and hands were terribly mangled by his passage through the glass, but loss of blood had no effect in diminishing his resistance. It was not until Lestrade succeeded in getting his hand inside his neckcloth and half-strangling him that we made him realize that his struggles were of no avail; and even then we felt no security until we had pinioned his feet as well as his hands. That done, we rose to our feet breathless and panting.
+
+'We have his cab,' said Sherlo","0","Bị cắt ở cả hai đầu: đầu câu cụt mất chủ ngữ ('of statues.'), cuối câu đứt chữ ('Sherlo'), phá vỡ tính trọn vẹn ngữ nghĩa.","Ho Sy Tung"
+"S01","001_Study_in_Scarlet","Study in Scarlet","119247","First 10 source IDs sorted; normalized text midpoint","B","001_Study_in_Scarlet:paragraph:00153","118634","119634","The whole thing occurred in a moment - so quickly that I had no time to realize it. I have a vivid recollection of that instant, of Holmes's triumphant expression and the ring of his voice, of the cabman's dazed, savage face, as he glared at the glittering handcuffs, which had appeared as if by magic upon his wrists. For a second or two we might have been a group of statues. Then with an inarticulate roar of fury, the prisoner wrenched himself free from Holmes's grasp, and hurled himself through the window. Woodwork and glass gave way before him; but before he got quite through, Gregson, Lestrade, and Holmes sprang upon him like so many staghounds. He was dragged back into the room, and then commenced a terrific conflict. So powerful and so fierce was he that the four of us were shaken off again and again. He appeared to have the convulsive strength of a man in an epileptic fit. His face and hands were terribly mangled by his passage through the glass, but loss of blood had no effect i","1","Mở đầu trọn vẹn ngữ cảnh vụ bắt giữ thủ phạm, nhưng bị cắt cụt ở cuối đoạn ('effect i') do đoạn văn vượt quá giới hạn 1000 ký tự.","Ho Sy Tung"
+"S01","001_Study_in_Scarlet","Study in Scarlet","119247","First 10 source IDs sorted; normalized text midpoint","C","001_Study_in_Scarlet:paragraph:00153","118634","119634","The whole thing occurred in a moment - so quickly that I had no time to realize it. I have a vivid recollection of that instant, of Holmes's triumphant expression and the ring of his voice, of the cabman's dazed, savage face, as he glared at the glittering handcuffs, which had appeared as if by magic upon his wrists. For a second or two we might have been a group of statues. Then with an inarticulate roar of fury, the prisoner wrenched himself free from Holmes's grasp, and hurled himself through the window. Woodwork and glass gave way before him; but before he got quite through, Gregson, Lestrade, and Holmes sprang upon him like so many staghounds. He was dragged back into the room, and then commenced a terrific conflict. So powerful and so fierce was he that the four of us were shaken off again and again. He appeared to have the convulsive strength of a man in an epileptic fit. His face and hands were terribly mangled by his passage through the glass, but loss of blood had no effect i","1","Mở đầu trọn vẹn ngữ cảnh vụ bắt giữ thủ phạm, nhưng bị cắt cụt ở cuối đoạn ('effect i') do đoạn văn vượt quá giới hạn 1000 ký tự.","Ho Sy Tung"
+"S02","002_Sign_of_Four","Sign of Four","115749","First 10 source IDs sorted; normalized text midpoint","A","002_Sign_of_Four:fixed:00136","115600","116600","a few odd bags. Besides, I don't like that wooden-legged man, wi' his ugly face and outlandish talk. What did he want always knockin' about here for?""
+
+""A wooden-legged man?"" said Holmes, with bland surprise.
+
+""Yes, sir, a brown, monkey-faced chap that's called more'n once for my old man. It was him that roused him up yesternight, and, what's more, my man knew he was comin', for he had steam up in the launch. I tell you straight, sir, I don't feel easy in my mind about it.""
+
+""But, my dear Mrs. Smith,"" said Holmes, shrugging his shoulders, ""You are frightening yourself about nothing. How could you possibly tell that it was the wooden-legged man who came in the night? I don't quite understand how you can be so sure.""
+
+""His voice, sir. I knew his voice, which is kind o' thick and foggy. He tapped at the winder,--about three it would be. 'Show a leg, matey,' says he: 'time to turn out guard.' My old man woke up Jim,--that's my eldest,--and away they went, without so much as a word to me. I","0","Bị cắt xén hai đầu: đầu câu mất chủ ngữ ('a few odd bags.'), cuối câu dở dang ở đại từ 'I', không giữ được ngữ cảnh.","Ho Sy Tung"
+"S02","002_Sign_of_Four","Sign of Four","115749","First 10 source IDs sorted; normalized text midpoint","B","002_Sign_of_Four:paragraph:00153","115032","115808","""Why, bless you, sir, it is in the steam launch that he has gone. That's what puzzles me; for I know there ain't more coals in her than would take her to about Woolwich and back. If he'd been away in the barge I'd ha' thought nothin'; for many a time a job has taken him as far as Gravesend, and then if there was much doin' there he might ha' stayed over. But what good is a steam launch without coals?""
+
+""He might have bought some at a wharf down the river.""
+
+""He might, sir, but it weren't his way. Many a time I've heard him call out at the prices they charge for a few odd bags. Besides, I don't like that wooden-legged man, wi' his ugly face and outlandish talk. What did he want always knockin' about here for?""
+
+""A wooden-legged man?"" said Holmes, with bland surprise.","2","Đoạn đối thoại hoàn chỉnh giữa bà Smith và Holmes về chiếc canô hơi nước và người đàn ông chân gỗ, tự hiểu và giữ trọn ý.","Ho Sy Tung"
+"S02","002_Sign_of_Four","Sign of Four","115749","First 10 source IDs sorted; normalized text midpoint","C","002_Sign_of_Four:paragraph:00153","115032","115808","""Why, bless you, sir, it is in the steam launch that he has gone. That's what puzzles me; for I know there ain't more coals in her than would take her to about Woolwich and back. If he'd been away in the barge I'd ha' thought nothin'; for many a time a job has taken him as far as Gravesend, and then if there was much doin' there he might ha' stayed over. But what good is a steam launch without coals?""
+
+""He might have bought some at a wharf down the river.""
+
+""He might, sir, but it weren't his way. Many a time I've heard him call out at the prices they charge for a few odd bags. Besides, I don't like that wooden-legged man, wi' his ugly face and outlandish talk. What did he want always knockin' about here for?""
+
+""A wooden-legged man?"" said Holmes, with bland surprise.","2","Đoạn đối thoại hoàn chỉnh giữa bà Smith và Holmes về chiếc canô hơi nước và người đàn ông chân gỗ, tự hiểu và giữ trọn ý.","Ho Sy Tung"
+"S03","003_ASH_01_Scandal_In_Bohemia","ASH 01 Scandal In Bohemia","23200","First 10 source IDs sorted; normalized text midpoint","A","003_ASH_01_Scandal_In_Bohemia:fixed:00027","22950","23950","a Mr. Godfrey Norton, of the Inner Temple. See the advantages of a cabman as a confidant. They had driven him home a dozen times from Serpentine-mews, and knew all about him. When I had listened to all they had to tell, I began to walk up and down near Briony Lodge once more, and to think over my plan of campaign.
+
+""This Godfrey Norton was evidently an important factor in the matter. He was a lawyer. That sounded ominous. What was the relation between them, and what the object of his repeated visits? Was she his client, his friend, or his mistress? If the former, she had probably transferred the photograph to his keeping. If the latter, it was less likely. On the issue of this question depended whether I should continue my work at Briony Lodge, or turn my attention to the gentleman's chambers in the Temple. It was a delicate point, and it widened the field of my inquiry. I fear that I bore you with these details, but I have to let you see my little difficulties, if you are to understan","0","Đầu câu bị cắt cụt ('a Mr. Godfrey Norton...'), cuối câu đứt từ ('understan'), thiếu tính độc lập và mạch lạc.","Ho Sy Tung"
+"S03","003_ASH_01_Scandal_In_Bohemia","ASH 01 Scandal In Bohemia","23200","First 10 source IDs sorted; normalized text midpoint","B","003_ASH_01_Scandal_In_Bohemia:paragraph:00031","22490","23265","""Oh, she has turned all the men's heads down in that part. She is the daintiest thing under a bonnet on this planet. So say the Serpentine-mews, to a man. She lives quietly, sings at concerts, drives out at five every day, and returns at seven sharp for dinner. Seldom goes out at other times, except when she sings. Has only one male visitor, but a good deal of him. He is dark, handsome, and dashing, never calls less than once a day, and often twice. He is a Mr. Godfrey Norton, of the Inner Temple. See the advantages of a cabman as a confidant. They had driven him home a dozen times from Serpentine-mews, and knew all about him. When I had listened to all they had to tell, I began to walk up and down near Briony Lodge once more, and to think over my plan of campaign.","2","Đoạn văn trọn vẹn giới thiệu về Irene Adler, lịch trình sinh hoạt và luật sư Godfrey Norton, ranh giới đoạn hoàn hảo.","Ho Sy Tung"
+"S03","003_ASH_01_Scandal_In_Bohemia","ASH 01 Scandal In Bohemia","23200","First 10 source IDs sorted; normalized text midpoint","C","003_ASH_01_Scandal_In_Bohemia:paragraph:00031","22490","23265","""Oh, she has turned all the men's heads down in that part. She is the daintiest thing under a bonnet on this planet. So say the Serpentine-mews, to a man. She lives quietly, sings at concerts, drives out at five every day, and returns at seven sharp for dinner. Seldom goes out at other times, except when she sings. Has only one male visitor, but a good deal of him. He is dark, handsome, and dashing, never calls less than once a day, and often twice. He is a Mr. Godfrey Norton, of the Inner Temple. See the advantages of a cabman as a confidant. They had driven him home a dozen times from Serpentine-mews, and knew all about him. When I had listened to all they had to tell, I began to walk up and down near Briony Lodge once more, and to think over my plan of campaign.","2","Đoạn văn trọn vẹn giới thiệu về Irene Adler, lịch trình sinh hoạt và luật sư Godfrey Norton, ranh giới đoạn hoàn hảo.","Ho Sy Tung"
+"S04","004_ASH_02_Red_Headed_League","ASH 02 Red Headed League","24637","First 10 source IDs sorted; normalized text midpoint","A","004_ASH_02_Red_Headed_League:fixed:00028","23800","24800","oke for them, for it cost them two and thirty pounds.""
+
+""We shall endeavour to clear up these points for you. And, first, one or two questions, Mr. Wilson. This assistant of yours who first called your attention to the advertisement--how long had he been with you?""
+
+""About a month then.""
+
+""How did he come?""
+
+""In answer to an advertisement.""
+
+""Was he the only applicant?""
+
+""No, I had a dozen.""
+
+""Why did you pick him?""
+
+""Because he was handy and would come cheap.""
+
+""At half-wages, in fact.""
+
+""Yes.""
+
+""What is he like, this Vincent Spaulding?""
+
+""Small, stout-built, very quick in his ways, no hair on his face, though he's not short of thirty. Has a white splash of acid upon his forehead.""
+
+Holmes sat up in his chair in considerable excitement. ""I thought as much,"" said he. ""Have you ever observed that his ears are pierced for earrings?""
+
+""Yes, sir. He told me that a gipsy had done it for him when he was a lad.""
+
+""Hum!"" said Holmes, sinking back in deep thought. ""He is still with you?""
+
+""Oh, ","0","Đầu đoạn bị xén mất chữ ('oke for them...'), cuối đoạn cắt lửng ở 'Oh, ', không giữ được cấu trúc câu.","Ho Sy Tung"
+"S04","004_ASH_02_Red_Headed_League","ASH 02 Red Headed League","24637","First 10 source IDs sorted; normalized text midpoint","B","004_ASH_02_Red_Headed_League:paragraph:00032","23856","24837","""We shall endeavour to clear up these points for you. And, first, one or two questions, Mr. Wilson. This assistant of yours who first called your attention to the advertisement--how long had he been with you?""
+
+""About a month then.""
+
+""How did he come?""
+
+""In answer to an advertisement.""
+
+""Was he the only applicant?""
+
+""No, I had a dozen.""
+
+""Why did you pick him?""
+
+""Because he was handy and would come cheap.""
+
+""At half-wages, in fact.""
+
+""Yes.""
+
+""What is he like, this Vincent Spaulding?""
+
+""Small, stout-built, very quick in his ways, no hair on his face, though he's not short of thirty. Has a white splash of acid upon his forehead.""
+
+Holmes sat up in his chair in considerable excitement. ""I thought as much,"" said he. ""Have you ever observed that his ears are pierced for earrings?""
+
+""Yes, sir. He told me that a gipsy had done it for him when he was a lad.""
+
+""Hum!"" said Holmes, sinking back in deep thought. ""He is still with you?""
+
+""Oh, yes, sir; I have only just left him.""","2","Chuỗi hội thoại hỏi đáp giữa Holmes và ông Wilson về người phụ tá Vincent Spaulding được giữ trọn vẹn từ mở đầu đến kết thúc.","Ho Sy Tung"
+"S04","004_ASH_02_Red_Headed_League","ASH 02 Red Headed League","24637","First 10 source IDs sorted; normalized text midpoint","C","004_ASH_02_Red_Headed_League:paragraph:00032","23856","24837","""We shall endeavour to clear up these points for you. And, first, one or two questions, Mr. Wilson. This assistant of yours who first called your attention to the advertisement--how long had he been with you?""
+
+""About a month then.""
+
+""How did he come?""
+
+""In answer to an advertisement.""
+
+""Was he the only applicant?""
+
+""No, I had a dozen.""
+
+""Why did you pick him?""
+
+""Because he was handy and would come cheap.""
+
+""At half-wages, in fact.""
+
+""Yes.""
+
+""What is he like, this Vincent Spaulding?""
+
+""Small, stout-built, very quick in his ways, no hair on his face, though he's not short of thirty. Has a white splash of acid upon his forehead.""
+
+Holmes sat up in his chair in considerable excitement. ""I thought as much,"" said he. ""Have you ever observed that his ears are pierced for earrings?""
+
+""Yes, sir. He told me that a gipsy had done it for him when he was a lad.""
+
+""Hum!"" said Holmes, sinking back in deep thought. ""He is still with you?""
+
+""Oh, yes, sir; I have only just left him.""","2","Chuỗi hội thoại hỏi đáp giữa Holmes và ông Wilson về người phụ tá Vincent Spaulding được giữ trọn vẹn từ mở đầu đến kết thúc.","Ho Sy Tung"
+"S05","005_ASH_03_Case_Of_Identity","ASH 03 Case Of Identity","18961","First 10 source IDs sorted; normalized text midpoint","A","005_ASH_03_Case_Of_Identity:fixed:00022","18700","19700"," hat and the vacuous face, there was something noble in the simple faith of our visitor which compelled our respect. She laid her little bundle of papers upon the table and went her way, with a promise to come again whenever she might be summoned.
+
+Sherlock Holmes sat silent for a few minutes with his fingertips still pressed together, his legs stretched out in front of him, and his gaze directed upward to the ceiling. Then he took down from the rack the old and oily clay pipe, which was to him as a counsellor, and, having lit it, he leaned back in his chair, with the thick blue cloud-wreaths spinning up from him, and a look of infinite languor in his face.
+
+""Quite an interesting study, that maiden,"" he observed. ""I found her more interesting than her little problem, which, by the way, is rather a trite one. You will find parallel cases, if you consult my index, in Andover in '77, and there was something of the sort at The Hague last year. Old as is the idea, however, there were one or","0","Bị cắt đứt chữ ở đầu (' hat and the...'), cuối câu cụt lửng ở 'one or', câu văn không hoàn chỉnh.","Ho Sy Tung"
+"S05","005_ASH_03_Case_Of_Identity","ASH 03 Case Of Identity","18961","First 10 source IDs sorted; normalized text midpoint","B","005_ASH_03_Case_Of_Identity:paragraph:00024","18676","19365","For all the preposterous hat and the vacuous face, there was something noble in the simple faith of our visitor which compelled our respect. She laid her little bundle of papers upon the table and went her way, with a promise to come again whenever she might be summoned.
+
+Sherlock Holmes sat silent for a few minutes with his fingertips still pressed together, his legs stretched out in front of him, and his gaze directed upward to the ceiling. Then he took down from the rack the old and oily clay pipe, which was to him as a counsellor, and, having lit it, he leaned back in his chair, with the thick blue cloud-wreaths spinning up from him, and a look of infinite languor in his face.","2","Hai đoạn văn hoàn chỉnh miêu tả thân chủ rời đi và Holmes trầm ngâm hút tẩu thuốc, giữ trọn vẹn hình ảnh và ngữ cảnh.","Ho Sy Tung"
+"S05","005_ASH_03_Case_Of_Identity","ASH 03 Case Of Identity","18961","First 10 source IDs sorted; normalized text midpoint","C","005_ASH_03_Case_Of_Identity:paragraph:00024","18676","19365","For all the preposterous hat and the vacuous face, there was something noble in the simple faith of our visitor which compelled our respect. She laid her little bundle of papers upon the table and went her way, with a promise to come again whenever she might be summoned.
+
+Sherlock Holmes sat silent for a few minutes with his fingertips still pressed together, his legs stretched out in front of him, and his gaze directed upward to the ceiling. Then he took down from the rack the old and oily clay pipe, which was to him as a counsellor, and, having lit it, he leaned back in his chair, with the thick blue cloud-wreaths spinning up from him, and a look of infinite languor in his face.","2","Hai đoạn văn hoàn chỉnh miêu tả thân chủ rời đi và Holmes trầm ngâm hút tẩu thuốc, giữ trọn vẹn hình ảnh và ngữ cảnh.","Ho Sy Tung"
+"S06","006_ASH_04_Boscombe_Valley_Mystery","ASH 04 Boscombe Valley Mystery","25676","First 10 source IDs sorted; normalized text midpoint","A","006_ASH_04_Boscombe_Valley_Mystery:fixed:00030","25500","26500","rcoat, in his flight, and must have had the hardihood to return and to carry it away at the instant when the son was kneeling with his back turned not a dozen paces off. What a tissue of mysteries and improbabilities the whole thing was! I did not wonder at Lestrade's opinion, and yet I had so much faith in Sherlock Holmes' insight that I could not lose hope as long as every fresh fact seemed to strengthen his conviction of young McCarthy's innocence.
+
+It was late before Sherlock Holmes returned. He came back alone, for Lestrade was staying in lodgings in the town.
+
+""The glass still keeps very high,"" he remarked as he sat down. ""It is of importance that it should not rain before we are able to go over the ground. On the other hand, a man should be at his very best and keenest for such nice work as that, and I did not wish to do it when fagged by a long journey. I have seen young McCarthy.""
+
+""And what did you learn from him?""
+
+""Nothing.""
+
+""Could he throw no light?""
+
+""None at all. I was ","0","Bị cắt vụn chữ ở đầu ('rcoat...'), cuối câu thoại cụt lửng ('None at all. I was '), làm mất ý nghĩa đối thoại.","Ho Sy Tung"
+"S06","006_ASH_04_Boscombe_Valley_Mystery","ASH 04 Boscombe Valley Mystery","25676","First 10 source IDs sorted; normalized text midpoint","B","006_ASH_04_Boscombe_Valley_Mystery:paragraph:00033","25414","25955","at were true the murderer must have dropped some part of his dress, presumably his overcoat, in his flight, and must have had the hardihood to return and to carry it away at the instant when the son was kneeling with his back turned not a dozen paces off. What a tissue of mysteries and improbabilities the whole thing was! I did not wonder at Lestrade's opinion, and yet I had so much faith in Sherlock Holmes' insight that I could not lose hope as long as every fresh fact seemed to strengthen his conviction of young McCarthy's innocence.","1","Kết thúc trọn vẹn ở cuối đoạn văn nhưng phần đầu bị cắt đứt chữ ('at were true') do đoạn văn gốc dài vượt giới hạn 1000 ký tự.","Ho Sy Tung"
+"S06","006_ASH_04_Boscombe_Valley_Mystery","ASH 04 Boscombe Valley Mystery","25676","First 10 source IDs sorted; normalized text midpoint","C","006_ASH_04_Boscombe_Valley_Mystery:paragraph:00033","25414","25955","at were true the murderer must have dropped some part of his dress, presumably his overcoat, in his flight, and must have had the hardihood to return and to carry it away at the instant when the son was kneeling with his back turned not a dozen paces off. What a tissue of mysteries and improbabilities the whole thing was! I did not wonder at Lestrade's opinion, and yet I had so much faith in Sherlock Holmes' insight that I could not lose hope as long as every fresh fact seemed to strengthen his conviction of young McCarthy's innocence.","1","Kết thúc trọn vẹn ở cuối đoạn văn nhưng phần đầu bị cắt đứt chữ ('at were true') do đoạn văn gốc dài vượt giới hạn 1000 ký tự.","Ho Sy Tung"
+"S07","007_ASH_05_Five_Orange_Pips","ASH 05 Five Orange Pips","19733","First 10 source IDs sorted; normalized text midpoint","A","007_ASH_05_Five_Orange_Pips:fixed:00023","19550","20550","e air.
+
+""Why did you come to me,"" he cried, ""and, above all, why did you not come at once?""
+
+""I did not know. It was only to-day that I spoke to Major Prendergast about my troubles and was advised by him to come to you.""
+
+""It is really two days since you had the letter. We should have acted before this. You have no further evidence, I suppose, than that which you have placed before us--no suggestive detail which might help us?""
+
+""There is one thing,"" said John Openshaw. He rummaged in his coat pocket, and, drawing out a piece of discoloured, blue-tinted paper, he laid it out upon the table. ""I have some remembrance,"" said he, ""that on the day when my uncle burned the papers I observed that the small, unburned margins which lay amid the ashes were of this particular colour. I found this single sheet upon the floor of his room, and I am inclined to think that it may be one of the papers which has, perhaps, fluttered out from among the others, and in that way has escaped destruction. Beyo","0","Đầu chunk bị mất từ ('e air.'), cuối chunk đứt chữ ('Beyo'), câu văn dang dở không tự hiểu được.","Ho Sy Tung"
+"S07","007_ASH_05_Five_Orange_Pips","ASH 05 Five Orange Pips","19733","First 10 source IDs sorted; normalized text midpoint","B","007_ASH_05_Five_Orange_Pips:paragraph:00027","19283","19981","Holmes shook his clenched hands in the air. ""Incredible imbecility!"" he cried.
+
+""They have, however, allowed me a policeman, who may remain in the house with me.""
+
+""Has he come with you to-night?""
+
+""No. His orders were to stay in the house.""
+
+Again Holmes raved in the air.
+
+""Why did you come to me,"" he cried, ""and, above all, why did you not come at once?""
+
+""I did not know. It was only to-day that I spoke to Major Prendergast about my troubles and was advised by him to come to you.""
+
+""It is really two days since you had the letter. We should have acted before this. You have no further evidence, I suppose, than that which you have placed before us--no suggestive detail which might help us?""","2","Khối đối thoại trọn vẹn giữa Holmes và John Openshaw về việc chậm trễ đến nhờ điều tra, giữ đúng ngữ cảnh và ranh giới đoạn.","Ho Sy Tung"
+"S07","007_ASH_05_Five_Orange_Pips","ASH 05 Five Orange Pips","19733","First 10 source IDs sorted; normalized text midpoint","C","007_ASH_05_Five_Orange_Pips:paragraph:00027","19283","19981","Holmes shook his clenched hands in the air. ""Incredible imbecility!"" he cried.
+
+""They have, however, allowed me a policeman, who may remain in the house with me.""
+
+""Has he come with you to-night?""
+
+""No. His orders were to stay in the house.""
+
+Again Holmes raved in the air.
+
+""Why did you come to me,"" he cried, ""and, above all, why did you not come at once?""
+
+""I did not know. It was only to-day that I spoke to Major Prendergast about my troubles and was advised by him to come to you.""
+
+""It is really two days since you had the letter. We should have acted before this. You have no further evidence, I suppose, than that which you have placed before us--no suggestive detail which might help us?""","2","Khối đối thoại trọn vẹn giữa Holmes và John Openshaw về việc chậm trễ đến nhờ điều tra, giữ đúng ngữ cảnh và ranh giới đoạn.","Ho Sy Tung"
+"S08","008_ASH_06_Man_With_Twisted_Lip","ASH 06 Man With Twisted Lip","24600","First 10 source IDs sorted; normalized text midpoint","A","008_ASH_06_Man_With_Twisted_Lip:fixed:00028","23800","24800","er clothes were found in the room. Would the body be dressed in a coat alone?""
+
+""No, sir, but the facts might be met speciously enough. Suppose that this man Boone had thrust Neville St. Clair through the window, there is no human eye which could have seen the deed. What would he do then? It would of course instantly strike him that he must get rid of the tell-tale garments. He would seize the coat, then, and be in the act of throwing it out, when it would occur to him that it would swim and not sink. He has little time, for he has heard the scuffle downstairs when the wife tried to force her way up, and perhaps he has already heard from his Lascar confederate that the police are hurrying up the street. There is not an instant to be lost. He rushes to some secret hoard, where he has accumulated the fruits of his beggary, and he stuffs all the coins upon which he can lay his hands into the pockets to make sure of the coat's sinking. He throws it out, and would have done the same with th","0","Bị cắt cụt ở cả đầu ('er clothes...') và cuối ('with th'), câu văn gãy khúc, không tự hiểu trọn vẹn.","Ho Sy Tung"
+"S08","008_ASH_06_Man_With_Twisted_Lip","ASH 06 Man With Twisted Lip","24600","First 10 source IDs sorted; normalized text midpoint","B","008_ASH_06_Man_With_Twisted_Lip:paragraph:00032","23880","24880","""No, sir, but the facts might be met speciously enough. Suppose that this man Boone had thrust Neville St. Clair through the window, there is no human eye which could have seen the deed. What would he do then? It would of course instantly strike him that he must get rid of the tell-tale garments. He would seize the coat, then, and be in the act of throwing it out, when it would occur to him that it would swim and not sink. He has little time, for he has heard the scuffle downstairs when the wife tried to force her way up, and perhaps he has already heard from his Lascar confederate that the police are hurrying up the street. There is not an instant to be lost. He rushes to some secret hoard, where he has accumulated the fruits of his beggary, and he stuffs all the coins upon which he can lay his hands into the pockets to make sure of the coat's sinking. He throws it out, and would have done the same with the other garments had not he heard the rush of steps below, and only just had tim","1","Mở đầu mạch lạc với toàn bộ giả thuyết của Holmes về hành vi của Boone, nhưng bị cắt ở cuối câu ('had tim') do đoạn dài quá 1000 ký tự.","Ho Sy Tung"
+"S08","008_ASH_06_Man_With_Twisted_Lip","ASH 06 Man With Twisted Lip","24600","First 10 source IDs sorted; normalized text midpoint","C","008_ASH_06_Man_With_Twisted_Lip:paragraph:00032","23880","24880","""No, sir, but the facts might be met speciously enough. Suppose that this man Boone had thrust Neville St. Clair through the window, there is no human eye which could have seen the deed. What would he do then? It would of course instantly strike him that he must get rid of the tell-tale garments. He would seize the coat, then, and be in the act of throwing it out, when it would occur to him that it would swim and not sink. He has little time, for he has heard the scuffle downstairs when the wife tried to force her way up, and perhaps he has already heard from his Lascar confederate that the police are hurrying up the street. There is not an instant to be lost. He rushes to some secret hoard, where he has accumulated the fruits of his beggary, and he stuffs all the coins upon which he can lay his hands into the pockets to make sure of the coat's sinking. He throws it out, and would have done the same with the other garments had not he heard the rush of steps below, and only just had tim","1","Mở đầu mạch lạc với toàn bộ giả thuyết của Holmes về hành vi của Boone, nhưng bị cắt ở cuối câu ('had tim') do đoạn dài quá 1000 ký tự.","Ho Sy Tung"
+"S09","009_ASH_07_Blue_Carbuncle","ASH 07 Blue Carbuncle","21050","First 10 source IDs sorted; normalized text midpoint","A","009_ASH_07_Blue_Carbuncle:fixed:00024","20400","21400","gs have not been so plentiful with me as they once were,"" he remarked. ""I had no doubt that the gang of roughs who assaulted me had carried off both my hat and the bird. I did not care to spend more money in a hopeless attempt at recovering them.""
+
+""Very naturally. By the way, about the bird, we were compelled to eat it.""
+
+""To eat it!"" Our visitor half rose from his chair in his excitement.
+
+""Yes, it would have been of no use to anyone had we not done so. But I presume that this other goose upon the sideboard, which is about the same weight and perfectly fresh, will answer your purpose equally well?""
+
+""Oh, certainly, certainly,"" answered Mr. Baker with a sigh of relief.
+
+""Of course, we still have the feathers, legs, crop, and so on of your own bird, so if you wish--""
+
+The man burst into a hearty laugh. ""They might be useful to me as relics of my adventure,"" said he, ""but beyond that I can hardly see what use the disjecta membra of my late acquaintance are going to be to me. No, sir, I ","0","Đầu câu bị mất chữ ('gs have not been...'), cuối câu thoại cụt lửng ('No, sir, I '), câu văn đứt đoạn.","Ho Sy Tung"
+"S09","009_ASH_07_Blue_Carbuncle","ASH 07 Blue Carbuncle","21050","First 10 source IDs sorted; normalized text midpoint","B","009_ASH_07_Blue_Carbuncle:paragraph:00026","20348","21177","Our visitor gave a rather shamefaced laugh. ""Shillings have not been so plentiful with me as they once were,"" he remarked. ""I had no doubt that the gang of roughs who assaulted me had carried off both my hat and the bird. I did not care to spend more money in a hopeless attempt at recovering them.""
+
+""Very naturally. By the way, about the bird, we were compelled to eat it.""
+
+""To eat it!"" Our visitor half rose from his chair in his excitement.
+
+""Yes, it would have been of no use to anyone had we not done so. But I presume that this other goose upon the sideboard, which is about the same weight and perfectly fresh, will answer your purpose equally well?""
+
+""Oh, certainly, certainly,"" answered Mr. Baker with a sigh of relief.
+
+""Of course, we still have the feathers, legs, crop, and so on of your own bird, so if you wish--""","2","Đoạn hội thoại hoàn chỉnh và tự nhiên về việc ăn con ngỗng của ông Baker và đề nghị đổi con khác, mạch lạc và trọn ý.","Ho Sy Tung"
+"S09","009_ASH_07_Blue_Carbuncle","ASH 07 Blue Carbuncle","21050","First 10 source IDs sorted; normalized text midpoint","C","009_ASH_07_Blue_Carbuncle:paragraph:00026","20348","21177","Our visitor gave a rather shamefaced laugh. ""Shillings have not been so plentiful with me as they once were,"" he remarked. ""I had no doubt that the gang of roughs who assaulted me had carried off both my hat and the bird. I did not care to spend more money in a hopeless attempt at recovering them.""
+
+""Very naturally. By the way, about the bird, we were compelled to eat it.""
+
+""To eat it!"" Our visitor half rose from his chair in his excitement.
+
+""Yes, it would have been of no use to anyone had we not done so. But I presume that this other goose upon the sideboard, which is about the same weight and perfectly fresh, will answer your purpose equally well?""
+
+""Oh, certainly, certainly,"" answered Mr. Baker with a sigh of relief.
+
+""Of course, we still have the feathers, legs, crop, and so on of your own bird, so if you wish--""","2","Đoạn hội thoại hoàn chỉnh và tự nhiên về việc ăn con ngỗng của ông Baker và đề nghị đổi con khác, mạch lạc và trọn ý.","Ho Sy Tung"
+"S10","010_ASH_08_Speckled_Band","ASH 08 Speckled Band","26487","First 10 source IDs sorted; normalized text midpoint","A","010_ASH_08_Speckled_Band:fixed:00031","26350","27350"," had married, this beauty would have had a mere pittance, while even one of them would cripple him to a very serious extent. My morning's work has not been wasted, since it has proved that he has the very strongest motives for standing in the way of anything of the sort. And now, Watson, this is too serious for dawdling, especially as the old man is aware that we are interesting ourselves in his affairs; so if you are ready, we shall call a cab and drive to Waterloo. I should be very much obliged if you would slip your revolver into your pocket. An Eley's No. 2 is an excellent argument with gentlemen who can twist steel pokers into knots. That and a tooth-brush are, I think, all that we need.""
+
+At Waterloo we were fortunate in catching a train for Leatherhead, where we hired a trap at the station inn and drove for four or five miles through the lovely Surrey lanes. It was a perfect day, with a bright sun and a few fleecy clouds in the heavens. The trees and wayside hedges were just thr","0","Đầu câu thiếu chủ ngữ (' had married...'), cuối câu đứt từ ('were just thr'), phá vỡ ranh giới câu.","Ho Sy Tung"
+"S10","010_ASH_08_Speckled_Band","ASH 08 Speckled Band","26487","First 10 source IDs sorted; normalized text midpoint","B","010_ASH_08_Speckled_Band:paragraph:00035","25888","26888","""I have seen the will of the deceased wife,"" said he. ""To determine its exact meaning I have been obliged to work out the present prices of the investments with which it is concerned. The total income, which at the time of the wife's death was little short of 1100 pounds, is now, through the fall in agricultural prices, not more than 750 pounds. Each daughter can claim an income of 250 pounds, in case of marriage. It is evident, therefore, that if both girls had married, this beauty would have had a mere pittance, while even one of them would cripple him to a very serious extent. My morning's work has not been wasted, since it has proved that he has the very strongest motives for standing in the way of anything of the sort. And now, Watson, this is too serious for dawdling, especially as the old man is aware that we are interesting ourselves in his affairs; so if you are ready, we shall call a cab and drive to Waterloo. I should be very much obliged if you would slip your revolver into","1","Mở đầu hoàn chỉnh giải thích điều khoản di chúc và động cơ tài chính, hiểu được ý chính nhưng bị cắt lửng ở cuối câu do vượt giới hạn độ dài.","Ho Sy Tung"
+"S10","010_ASH_08_Speckled_Band","ASH 08 Speckled Band","26487","First 10 source IDs sorted; normalized text midpoint","C","010_ASH_08_Speckled_Band:paragraph:00035","25888","26888","""I have seen the will of the deceased wife,"" said he. ""To determine its exact meaning I have been obliged to work out the present prices of the investments with which it is concerned. The total income, which at the time of the wife's death was little short of 1100 pounds, is now, through the fall in agricultural prices, not more than 750 pounds. Each daughter can claim an income of 250 pounds, in case of marriage. It is evident, therefore, that if both girls had married, this beauty would have had a mere pittance, while even one of them would cripple him to a very serious extent. My morning's work has not been wasted, since it has proved that he has the very strongest motives for standing in the way of anything of the sort. And now, Watson, this is too serious for dawdling, especially as the old man is aware that we are interesting ourselves in his affairs; so if you are ready, we shall call a cab and drive to Waterloo. I should be very much obliged if you would slip your revolver into","1","Mở đầu hoàn chỉnh giải thích điều khoản di chúc và động cơ tài chính, hiểu được ý chính nhưng bị cắt lửng ở cuối câu do vượt giới hạn độ dài.","Ho Sy Tung"
